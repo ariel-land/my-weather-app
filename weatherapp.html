@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4650162b61.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container" style="max-width: 40rem">
+      <div class="card">
+        <div class="card-body>">
+          <div class="row city">
+            <div class="col-7 locationCurrent">
+              <h2>
+                <span id="current-city">Tokyo</span>, <span id="current-country">JP</span>
+              </h2>
+            </div>
+            <div class="col-5 search-bar text-center">
+              <form id="search-form">
+                <i class="far fa-compass current-button"></i>
+                <input type="search" placeholder="Enter City" autofocus="on" id="search-text-input"/>
+                <button
+              type="submit"
+              value="search-button"
+              class="search-button"
+              id="submit-search"
+            >
+            <i class="fas fa-search"></i>
+            
+              </form>
+            </div>
+          </div>
+          <div class="row dateTime">
+            <div class="col-4 dateTime" id="current-date">
+              Sep 19, Sun 22:00
+            </div>
+            <div class="col-8 dateTime"></div>
+          </div>
+
+          <div class="row weatherToday">
+            <div class="col-3 todayIcon">🌤</div>
+
+            <div class="col-3 todayTemp" id="temperature">
+              <span class="tempNow">19</span>
+              <a href="#" class="tempUnit" id="celsius-link">°C</a>
+              <span class="divider">|</span>
+              <a href="#" class="tempUnit" id="fahrenheit-link">°F </a>
+            </div>
+            <div class="col-5"></div>
+          </div>
+          <p class="todayWeather">
+            <span class="currentWeatherDescription">Clear</span> <br />
+            <span class="currentLow">18°C</span> | <span class="currentHigh">24°C</span>
+          </p>
+        </div>
+      </div>
+      <div class="card forecast">
+        <div class="card-body>">
+          <div class="row">
+            <div class="col weekForecast">
+              <strong>Sun</strong> <br />
+              <i class="fas fa-cloud weatherIcons"></i> <br />
+              <span class="weeklyTemp">18/24°C</span>
+            </div>
+            <div class="col weekForecast">
+              <strong>Mon</strong> <br />
+              <i class="fas fa-cloud-showers-heavy weatherIcons"></i> <br />
+              <span class="weeklyTemp">18/24°C</span>
+            </div>
+            <div class="col weekForecast">
+              <strong>Tue</strong> <br />
+              <i class="fas fa-cloud weatherIcons"></i> <br />
+              <span class="weeklyTemp">18/24°C</span>
+            </div>
+            <div class="col weekForecast">
+              <strong>Wed</strong> <br />
+              <i class="fas fa-cloud-sun weatherIcons"></i> <br />
+              <span class="weeklyTemp">18/24°C</span>
+            </div>
+            <div class="col weekForecast">
+              <strong>Thu</strong> <br />
+              <i class="far fa-sun weatherIcons"></i> <br />
+              <span class="weeklyTemp">18/24°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
