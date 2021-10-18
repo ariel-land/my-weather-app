@@ -133,3 +133,8 @@ button.search-button:hover {
 .weeklyTemp {
   font-size: 12px;
 }
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+}
